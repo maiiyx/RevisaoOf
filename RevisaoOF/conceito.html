@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão - Estrutura de Repetição</title>
+</head>
+<body>
+    
+    <script>
+        //while -> enquanto
+        function getInteiroAleatorioEntre(min, max){
+            const valor = Math.random() * (min, max) - min
+            return Math.floor(valor)
+        }
+
+        console.log(getInteiroAleatorioEntre(-1, 15))
+
+        let opcao = 1
+
+        // é -1
+        while(opcao != 1){
+            opcao = getInteiroAleatorioEntre(-1, 25)
+            console.log(`Opção escolhida: ${opcao}`)
+        }
+        console.log('Até a próxima')
+
+        //For - para
+        for(let i = 1; i<=10; i++){
+            console.log(`i: ${i}`)
+        }
+
+        const notas = [6.8, 3.1, 2.4, 9.5, 7.1]
+        // console.log(notas.length)
+
+        for(let i = 1; i<notas.length; i++)
+        if(notas[i] > 5){
+            console.log(`notas: ${notas[i]}`)
+        }
+        // console.log(`notas: ${notas[i]}`)
+
+    </script>
+
+</body>
+</html>

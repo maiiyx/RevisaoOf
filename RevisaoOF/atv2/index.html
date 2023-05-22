@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>N° Decrescente</title>
+</head>
+<body>
+    
+    <main>
+        <h1>Revisão Repetição</h1>
+    
+            <div class="img"><img src="../img/numbers.png" alt=""></div>
+
+            <div class="tabuada">
+                <h3>Programa Número Decrescente</h3>
+                <label for="">Número: </label>
+                <input type="text" id="inNumero" placeholder="Digite um número">
+                <button type="button" id="btnResult">Resultado</button>
+                <div class="result" id="outResult"></div>
+            </div>
+    </main>
+
+    <script>
+
+        function pulaLinha() {
+            document.write("<br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+        var contador = i;
+
+    while(contador >= 0) {
+
+        mostra(contador) ;
+        contador = contador -1; 
+
+    }
+        mostra("FIM")
+
+</script>
+</body>
+</html>

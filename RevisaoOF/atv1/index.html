@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tabuada</title>
+</head>
+<body>
+
+    <main>
+        <h1>Revisão Repetição</h1>
+    
+            <div class="img"><img src="../img/numbers.png" alt=""></div>
+
+            <div class="tabuada">
+                <h3>Programa Tabuada</h3>
+                <label for="">Número: </label>
+                <input type="text" id="inNumero" placeholder="Digite um número">
+                <button type="button" id="btnResult">Resultado</button>
+                <div class="result" id="outResult"></div>
+            </div>
+    </main>
+
+    <script>
+
+        const inNumero = document.querySelector('#inNumero');
+        const btnResult = document.querySelector('#btnResult');
+        const outResult = document.querySelector('#outResult');
+
+        btnResult.addEventListener('click', ()=>{
+            let numero = Number(inNumero.value)
+            // console.log(typeof numero)
+
+            if(numero === 0 || isNaN(numero)){
+                alert('Digite um número válido!')
+                inNumero.focus()
+                return
+            }
+
+            let resposta = ''
+            for(let i = 1; i<=10; i++){
+            resposta = `${resposta+numero} x ${i} = ${numero * i} <br>`
+        }
+
+        // output.textContent = `${resposta}`
+
+        outResult.innerHTML = `${resposta}`
+
+        })
+
+        // const numero = document.getElementById('inNumero');
+        // const btn = document.getElementById('btnResult');
+        // const resultado = document.getElementById('output');
+
+    </script>
+    
+</body>
+</html>
